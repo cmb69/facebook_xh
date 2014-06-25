@@ -52,6 +52,11 @@ class LikeButtonTest extends PHPUnit_Framework_TestCase
         );
     }
 
+    /**
+     * Tests that the JS SDK in only rendered once.
+     *
+     * @return void
+     */
     public function testRendersJsSdkOnlyOnce()
     {
         $subject = new Facebook_Controller();
