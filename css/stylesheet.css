@@ -1,0 +1,18 @@
+/*
+ * Front-end.
+ */
+
+.fb-like {}
+.fb-share-button {}
+
+/*
+ * Back-end.
+ */
+
+.facebook_icon {
+    float: left;
+    margin-right: 16px;
+}
+.facebook_license {
+    text-align: justify;
+}
