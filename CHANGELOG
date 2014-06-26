@@ -1,2 +1,5 @@
+Version 1.0beta2 -- internally released 2014-06-26
+* implemented facebook_link()
+
 Version 1.0beta1 -- released 2014-06-25
 * initial release
