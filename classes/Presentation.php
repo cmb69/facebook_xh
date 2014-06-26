@@ -155,7 +155,7 @@ EOT;
     {
         global $pth, $plugin_cf, $plugin_tx;
 
-        $html = '<a href="' . XH_hsc($url) . '">';
+        $html = '<a class="facebook_link" href="' . XH_hsc($url) . '">';
         $image = $plugin_cf['facebook']['link_image'];
         $text = $plugin_tx['facebook']['link_text'];
         if ($image) {

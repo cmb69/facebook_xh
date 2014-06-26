@@ -44,6 +44,7 @@ class LinkTest extends PHPUnit_Framework_TestCase
             array(
                 'tag' => 'a',
                 'attributes' => array(
+                    'class' => 'facebook_link',
                     'href' => 'https://www.facebook.com/christoph.becker.121'
                 ),
                 'content' => 'My Facebook page'
@@ -73,6 +74,7 @@ class LinkTest extends PHPUnit_Framework_TestCase
             array(
                 'tag' => 'a',
                 'attributes' => array(
+                    'class' => 'facebook_link',
                     'href' => 'https://www.facebook.com/christoph.becker.121'
                 ),
                 'child' => array(
