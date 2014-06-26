@@ -1,5 +1,7 @@
 <?php
 
+$plugin_cf['facebook']['link_image']="";
+
 $plugin_cf['facebook']['like_layout']="standard";
 $plugin_cf['facebook']['like_action']="like";
 $plugin_cf['facebook']['like_show_faces']="";

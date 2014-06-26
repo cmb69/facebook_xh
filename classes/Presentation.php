@@ -141,7 +141,37 @@ EOT;
     }
 
     /**
-     * Renders the like button.
+     * Renders a facebook link.
+     *
+     * @param string $url A URL to link to.
+     *
+     * @return string (X)HTML.
+     *
+     * @global array The paths of system files and folders.
+     * @global array The configuration of the plugins.
+     * @global array The localization of the plugins.
+     */
+    public function renderLink($url)
+    {
+        global $pth, $plugin_cf, $plugin_tx;
+
+        $html = '<a href="' . XH_hsc($url) . '">';
+        $image = $plugin_cf['facebook']['link_image'];
+        $text = $plugin_tx['facebook']['link_text'];
+        if ($image) {
+            $html .= tag(
+                'img src="' . $pth['folder']['images'] . $image
+                . '" alt="' . XH_hsc($text) . '" title="' . XH_hsc($text) . '"'
+            );
+        } else {
+            $html .= XH_hsc($text);
+        }
+        $html .= '</a>';
+        return $html;
+    }
+
+    /**
+     * Renders a like button.
      *
      * @param string $url A URL to like.
      *
@@ -206,7 +236,7 @@ EOT;
     }
 
     /**
-     * Renders the share button.
+     * Renders a share button.
      *
      * @param string $url A URL to share.
      *
