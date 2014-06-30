@@ -1,3 +1,8 @@
+Version 1.0beta3 -- released 2014-06-30
+* fixed vulnerability under unsupported CMSimple_XH versions, where the plugin
+  administration didn't require authentication
+* added support for integrated plugin menu
+
 Version 1.0beta2 -- internally released 2014-06-26
 * implemented facebook_link()
 
