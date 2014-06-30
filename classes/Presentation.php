@@ -61,6 +61,9 @@ class Facebook_Controller
     {
         global $admin, $action, $o;
 
+        if (function_exists('XH_registerStandardPluginMenuItems')) {
+            XH_registerStandardPluginMenuItems(false);
+        }
         $o .= print_plugin_admin('off');
         switch ($admin) {
         case '':

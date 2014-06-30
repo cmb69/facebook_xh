@@ -62,6 +62,9 @@ class InfoViewTest extends PHPUnit_Framework_TestCase
             'facebook' => array('alt_icon' => 'Facebook')
         );
         $this->_subject = new Facebook_Controller();
+        $registerStandardMenuItems = new PHPUnit_Extensions_MockFunction(
+            'XH_registerStandardPluginMenuItems', $this->_subject
+        );
         $printPluginAdmin = new PHPUnit_Extensions_MockFunction(
             'print_plugin_admin', $this->_subject
         );

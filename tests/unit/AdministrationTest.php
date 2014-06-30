@@ -47,6 +47,10 @@ class AdministrationTest extends PHPUnit_Framework_TestCase
         $admin = 'plugin_stylesheet';
         $action = 'plugin_text';
         $subject = new Facebook_Controller();
+        $registerStandardMenuItems = new PHPUnit_Extensions_MockFunction(
+            'XH_registerStandardPluginMenuItems', $subject
+        );
+        $registerStandardMenuItems->expects($this->once())->with(false);
         $printPluginAdmin = new PHPUnit_Extensions_MockFunction(
             'print_plugin_admin', $subject
         );

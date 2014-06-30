@@ -14,6 +14,7 @@
  * @link      http://3-magi.net/?CMSimple_XH/Facebook_XH
  */
 
+require_once '../../cmsimple/functions.php';
 require_once './classes/Presentation.php';
 
 /**
