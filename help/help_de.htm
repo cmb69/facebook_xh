@@ -27,6 +27,7 @@ anstelle von Facebook_XH zu verwenden.</p>
 <li><a href="#settings">Einstellungen</a></li>
 <li><a href="#usage">Verwendung</a>
 <ul>
+    <li><a href="#usage-link">Facebook-Links</a></li>
     <li><a href="#usage-like">Like-Buttons</a></li>
     <li><a href="#usage-share">Share-Buttons</a></li>
 </ul></li>
@@ -82,6 +83,17 @@ Anforderungen anpassen.</p>
 
 <h2 id="usage">Verwendung</h2>
 
+<h3 id="usage-link">Facebook-Links</h3>
+<p>Um einen Facebook-Link auf einer Seite einzubinden, verwenden Sie:</p>
+<pre>{{{facebook_link('http://www.facebook.com/&hellip;');}}}</pre>
+<p>Um einen Facebook-Link im Template einzubinden, verwenden Sie:</p>
+<pre>&lt;?php echo facebook_link('http://www.facebook.com/&hellip;');?&gt;</pre>
+<p>In beiden Fällen müssen Sie das Auslassungszeichen (&hellip;) durch Ihren
+internen Facebook Benutzernamen ersetzen; anders ausgedrückt, müssen Sie Ihre
+Facebook-URL als Argument an die Funktion übergeben.</p>
+<p>Sie können mehrere Facebook-Links auf einer einzelnen Seite einbinden.</p>
+<div class="toplink"><a href="#">zum Seitenanfang</a></div>
+
 <h3 id="usage-like">Like-Buttons</h3>
 <p>Um einen Like-Button auf einer Seite einzubinden, verwenden Sie:</p>
 <pre>{{{facebook_like('http://example.com/');}}}</pre>
@@ -128,9 +140,10 @@ Dank für die Veröffentlichung des Icons.</p>
 <!--<p>Dieses Plugin verwendet "free applications icons" von <a-->
 <!--href="http://www.aha-soft.com/">Aha-Soft</a>. Vielen Dank für die freie-->
 <!--Verwendbarkeit dieser Icons.</p>-->
-<!--<p>Vielen Dank an die Gemeinschaft im <a-->
-<!--href="http://www.cmsimpleforum.com/">CMSimple_XH-Forum</a> für Tipps, Anregungen-->
-<!--und das Testen.</p>-->
+<p>Vielen Dank an die Gemeinschaft im <a
+href="http://www.cmsimpleforum.com/">CMSimple_XH-Forum</a> für Tipps, Anregungen
+und das Testen. Besonders möchte ich johnjdoe danken, der der erste Beta-Tester
+war und den Direktlink zu einer Facebook-Seite vorgeschlagen hat.</p>
 <p>Zu guter Letzt vielen Dank an <a href="http://harteg.dk/">Peter Harteg</a>,
 den "Vater" von CMSimple, und allen Entwicklern von <a
 href="http://www.cmsimple-xh.org/">CMSimple_XH</a>, ohne die dieses fantastische

@@ -26,6 +26,7 @@ instead of Facebook_XH.</p>
 <li><a href="#settings">Settings</a></li>
 <li><a href="#usage">Usage</a>
 <ul>
+    <li><a href="#usage-link">Facebook Links</a></li>
     <li><a href="#usage-like">Like Buttons</a></li>
     <li><a href="#usage-share">Share Buttons</a></li>
 </ul></li>
@@ -78,6 +79,17 @@ strings to your own language, or customize them according to your needs.</p>
 
 <h2 id="usage">Usage</h2>
 
+<h3 id="usage-link">Facebook Links</h3>
+<p>To embed a link to your facebook page on a page, use:</p>
+<pre>{{{facebook_link('http://www.facebook.com/&hellip;');}}}</pre>
+<p>To embed a link to your facebook page in the template, use:</p>
+<pre>&lt;?php echo facebook_link('http://www.facebook.com/&hellip;');?&gt;</pre>
+<p>In either case you have to replace the ellipsis (&hellip;) with your internal
+Facebook user name; in other words, you have to give your Facebook URL as
+argument to the function.</p>
+<p>You can embed multiple facebook links on a single page.</p>
+<div class="toplink"><a href="#">back to top</a></div>
+
 <h3 id="usage-like">Like Buttons</h3>
 <p>To embed a like button on a page, use:</p>
 <pre>{{{facebook_like('http://example.com/');}}}</pre>
@@ -122,9 +134,10 @@ making the icon publicly available.</p>
 <!--<p>This plugin uses free applications icons from <a
 href="http://www.aha-soft.com/">Aha-Soft</a>. Many thanks to making these icons
 freely available.</p>-->
-<!--<p>Many thanks to the community at the <a
+<p>Many thanks to the community at the <a
 href="http://www.cmsimpleforum.com/">CMSimple_XH forum</a> for tips, suggestions
-and testing</p>-->
+and testing. Especially I like to thank johnjdoe for being the first beta
+tester, and suggesting the direkt link to a facebook page.</p>
 <p>And last but not least many thanks to <a href="http://harteg.dk/">Peter
 Harteg</a>, the "father" of CMSimple, and all developers of <a
 href="http://www.cmsimple-xh.org/"> CMSimple_XH</a> without whom this amazing
