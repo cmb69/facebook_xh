@@ -109,7 +109,6 @@
                 <exclude name="composer.*"/>
                 <exclude name="coverage.xml"/>
                 <exclude name="phpcompatinfo.xml"/>
-                <exclude name="TODO"/>
             </fileset>
         </move>
         <delete dir="export"/>
